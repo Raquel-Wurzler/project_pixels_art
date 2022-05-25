@@ -1,0 +1,27 @@
+.color {
+  border: solid 1px black;
+  float: left;
+  margin: 3px;
+  padding: 40px;
+}
+
+#color-palette {
+  height: 1000px;
+  width: 1000px;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#purple {
+  background-color: purple;
+}
