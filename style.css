@@ -6,7 +6,7 @@
 }
 
 #color-palette {
-  height: 1000px;
+  height: 100px;
   width: 1000px;
 }
 
@@ -24,4 +24,18 @@
 
 #purple {
   background-color: purple;
+}
+
+#pixel-board {
+  height: 420px;
+  width: 420px;
+  border: 1px solid black;
+}
+
+.pixel {
+  border: solid 2px black;
+  padding: 40px;
+  margin: 0,6;
+  float: left;
+  background-color: white;
 }
