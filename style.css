@@ -2,7 +2,7 @@
   border: solid 1px black;
   float: left;
   margin: 3px;
-  padding: 40px;
+  padding: 60px;
 }
 
 #color-palette {
@@ -27,15 +27,18 @@
 }
 
 #pixel-board {
-  height: 420px;
-  width: 420px;
+  height: 610px;
+  width: 610px;
   border: 1px solid black;
+  margin-top: 35px;
 }
 
 .pixel {
-  border: solid 2px black;
+  border: solid 1px black;
   padding: 40px;
   margin: 0,6;
   float: left;
   background-color: white;
+  height: 40px;
+  width: 40px;
 }
