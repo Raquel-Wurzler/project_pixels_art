@@ -10,7 +10,7 @@
   width: 1000px;
 }
 
-/* .preto {
+.preto {
   background-color: black;
 }
 
@@ -24,11 +24,11 @@
 
 .roxo {
   background-color: purple;
-} */
+}
 
 #pixel-board {
-  height: 610px;
-  width: 610px;
+  height: 650px;
+  width: 650px;
   border: 1px solid black;
   margin-top: 35px;
 }
