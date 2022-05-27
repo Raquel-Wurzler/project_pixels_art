@@ -10,21 +10,21 @@
   width: 1000px;
 }
 
-#black {
+/* .preto {
   background-color: black;
 }
 
-#red {
+.vermelho {
   background-color: red;
 }
 
-#blue {
+.azul {
   background-color: blue;
 }
 
-#purple {
+.roxo {
   background-color: purple;
-}
+} */
 
 #pixel-board {
   height: 610px;
