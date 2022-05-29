@@ -1,16 +1,25 @@
 .color {
   border: solid 1px black;
-  float: left;
   margin: 3px;
   padding: 60px;
+  display: inline-block;
 }
 
 #color-palette {
-  height: 100px;
-  width: 1000px;
+  display: inline;
 }
 
-.preto {
+#clear-board {
+  display: flex;
+  font-family: cursive;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 10px;
+}
+
+/* .preto {
   background-color: black;
 }
 
@@ -24,21 +33,22 @@
 
 .roxo {
   background-color: purple;
-}
+} */
 
 #pixel-board {
   height: 650px;
   width: 650px;
   border: 1px solid black;
-  margin-top: 35px;
+  margin-top: 1%;
 }
 
 .pixel {
   border: solid 1px black;
   padding: 40px;
   margin: 0,6;
-  float: left;
   background-color: white;
   height: 40px;
   width: 40px;
+  border-radius: 50%;
+  display: inline-block;
 }

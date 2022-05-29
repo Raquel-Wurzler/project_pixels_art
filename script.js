@@ -1,14 +1,14 @@
-// let preto = document.getElementById('black');
-// preto.style.backgroundColor = 'black';
+let preto = document.getElementById('black');
+preto.style.backgroundColor = 'black';
 
-// let vermelho = document.getElementById('red');
-// vermelho.style.backgroundColor = 'red';
+let vermelho = document.getElementById('red');
+vermelho.style.backgroundColor = 'red';
 
-// let azul = document.getElementById('blue');
-// azul.style.backgroundColor = 'blue';
+let azul = document.getElementById('blue');
+azul.style.backgroundColor = 'blue';
 
-// let roxo = document.getElementById('purple');
-// roxo.style.backgroundColor = 'purple';
+let roxo = document.getElementById('purple');
+roxo.style.backgroundColor = 'purple';
 
 //Requisito 7.
 let palette = document.getElementById('color-palette');
@@ -21,6 +21,7 @@ palette.addEventListener('click', function recebeSelecao (event) {
   seleciona.classList.add('selected');
 })
 
+// Requisito 8.
 const element = document.querySelector('.selected');
 const obj = window.getComputedStyle(element, null);
 
@@ -32,11 +33,23 @@ pixels.addEventListener('click', function (event) {
   event.target.style.backgroundColor = bgColor;
 })
 
+//Requisito 9.
 let button = document.getElementById('clear-board');
 button.addEventListener('click', function () {
-  // let caixa = document.getElementsByClassName('pixel');
-  pixels.style.backgroundColor = 'pink';
+  let caixa = document.querySelector('.pixel');
+  caixa.style.backgroundColor = 'pink';
 })
+
+// function again () {
+//   const selec = document.getElementById('pixel-board');
+//   selec.addEventListener('click', function (event) {
+//     const alvo = event.target;
+//     if (alvo.classList.contains('alvo')) {
+//       const targetNow = document.querySelector('.selected');
+//       alvo.style.backgroundColor = targetNow.style.backgroundColor;
+//     }
+//   })
+// }
 
 // const pi = document.getElementsByClassName('pixel');
 // const button = document.getElementById('clear-board');
@@ -50,21 +63,8 @@ button.addEventListener('click', function () {
 
 //element.style.backgroundColor
 
-// function again () {
-//   let selec = document.getElementById('pixel-board');
-//   selec.addEventListener('click', function (event) {
-//     let alvo = event.target;
-//     if (alvo.classList.contains('alvo')) {
-//       let targetNow = document.querySelector('.selected');
-//       alvo.style.backgroundColor = targetNow.style.backgroundColor;
-//     }
-//   })
-// }
-
-  // document.getElementById('pixel-board');
   // let pix = document.getElementById('pixel-board');
   // pix.addEventListener('click', function () {
-  //   console.log('test');
   //   let receive = event.target;
   //   let select = document.querySelector('.selected');
   //     receive.style.backgrounColor = select.style.backgrounColor;
@@ -82,3 +82,16 @@ button.addEventListener('click', function () {
 
 
 // armazene essa cor e atribua ao pixel clicado(event.target.style.background)
+
+//Requisito 12
+function aleatorio () {
+  const red = parseInt(Math.random() * 255, 10);
+  const green = parseInt(Math.random() * 255, 10);
+  const blue = parseInt(Math.random() * 255, 10);
+  return `(${red}, ${green}, ${blue})`;
+}
+
+for (let indice = 0; indice < color.length; indice += 1) {
+  const varia = color[indice];
+  varia.style.backgroundColor = 'rgb' + aleatorio();
+}
