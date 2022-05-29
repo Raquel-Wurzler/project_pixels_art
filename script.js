@@ -40,6 +40,18 @@ button.addEventListener('click', function () {
   caixa.style.backgroundColor = 'pink';
 })
 
+// let caixa = document.getElementsByClassName('pixel');
+// function primeiraParte () {
+//   for (let index = 0; index < caixa.length; index += 1) {
+//     caixa[index].style.backgroundColor = 'pink';
+//   }
+// }
+
+// function segundaParte () {
+//   const limpa = document.getElementById('clear-board');
+//   limpa.addEventListener('click', primeiraParte);
+// }
+
 // function again () {
 //   const selec = document.getElementById('pixel-board');
 //   selec.addEventListener('click', function (event) {
