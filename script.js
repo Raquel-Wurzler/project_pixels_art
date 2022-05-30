@@ -43,6 +43,22 @@ button.addEventListener('click', function () {
   }
 });
 
+//Requisito 10.
+const bot = document.getElementById('generate-board');
+
+
+bot.addEventListener('click', function () {
+  let inp = document.getElementById('board-size').value;
+  if (inp === '' || inp < 5) {
+    alert('Board inválido!')
+  } else {
+    console.log(inp);
+  }
+  if (inp >= 5 && inp <= 50) {
+
+  }
+})
+
 //Requisito 12
 function aleatorio () {
   const red = parseInt(Math.random() * 255, 10);

@@ -1,16 +1,53 @@
+body {
+  background-image: url(https://img.freepik.com/fotos-gratis/papel-digital-abstrato-aquarela-criancas-padrao-infinito-rosa-e-azul-formas-geometricas-fundo_82758-516.jpg?w=2000);
+}
+
+h1 {
+  font-size: 70px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1::first-letter {
+  color: rgb(207, 61, 85);
+  font-size: 100px;
+}
+
 .color {
   border: solid 1px black;
   margin: 3px;
-  padding: 60px;
+  padding: 50px;
   display: inline-block;
+  border-radius: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #color-palette {
-  display: inline;
+  display: flex;
 }
 
 #clear-board {
-  display: flex;
+  display: flexbox;
+  font-family: cursive;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 1%;
+}
+
+#board-size {
+  display: flexbox;
+  margin-top: 0%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+#generate-board {
+  display: flexbox;
   font-family: cursive;
   padding: 5px 10px;
   border-radius: 5px;
@@ -22,7 +59,6 @@
 #pixel-board {
   height: 630px;
   width: 630px;
-  border: 1px solid rgb(0, 0, 0);
   margin-top: 1%;
 }
 
@@ -33,6 +69,6 @@
   background-color: white;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
+  border-radius: 10%;
   display: inline-block;
 }
