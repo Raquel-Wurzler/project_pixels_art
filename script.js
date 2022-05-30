@@ -39,7 +39,7 @@ button.addEventListener('click', function () {
   let caixa = document.getElementsByClassName('pixel');
   console.log(caixa);
   for(let index = 0; index < caixa.length; index += 1) {
-    caixa[index].style.backgroundColor = 'pink';
+    caixa[index].style.backgroundColor = 'white';
   }
 })
 
