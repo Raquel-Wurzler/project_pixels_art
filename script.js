@@ -36,10 +36,14 @@ pixels.addEventListener('click', function (event) {
 //Requisito 9.
 let button = document.getElementById('clear-board');
 button.addEventListener('click', function () {
-  let caixa = document.querySelector('.pixel');
-  caixa.style.backgroundColor = 'pink';
+  let caixa = document.getElementsByClassName('pixel');
+  console.log(caixa);
+  for(let index = 0; index < caixa.length; index += 1) {
+    caixa[index].style.backgroundColor = 'pink';
+  }
 })
 
+//9
 // let caixa = document.getElementsByClassName('pixel');
 // function primeiraParte () {
 //   for (let index = 0; index < caixa.length; index += 1) {
@@ -52,6 +56,7 @@ button.addEventListener('click', function () {
 //   limpa.addEventListener('click', primeiraParte);
 // }
 
+//8
 // function again () {
 //   const selec = document.getElementById('pixel-board');
 //   selec.addEventListener('click', function (event) {
@@ -63,18 +68,21 @@ button.addEventListener('click', function () {
 //   })
 // }
 
+//9
 // const pi = document.getElementsByClassName('pixel');
 // const button = document.getElementById('clear-board');
 // button.addEventListener('click', function () {
 //   event.target.style.backgroundColor = 'pink';
 // })
 
+//9
 // document.getElementById('clear-board').addEventListener('click', function () {
-//   document.querySelector('body').setAttribute.('class', 'white');
+//   document.querySelector('.pixel').setAttribute.('class', 'pink');
 // })
 
 //element.style.backgroundColor
 
+//8
   // let pix = document.getElementById('pixel-board');
   // pix.addEventListener('click', function () {
   //   let receive = event.target;
@@ -82,6 +90,7 @@ button.addEventListener('click', function () {
   //     receive.style.backgrounColor = select.style.backgrounColor;
   // })
 
+  //8
 // let vazio = document.getElementById('pixel-board');
 // vazio.addEventListener('click', function (event) {
 //   let recebeCor = event.target;
@@ -103,7 +112,8 @@ function aleatorio () {
   return `(${red}, ${green}, ${blue})`;
 }
 
-for (let indice = 0; indice < color.length; indice += 1) {
-  const varia = color[indice];
-  varia.style.backgroundColor = 'rgb' + aleatorio();
+const mudanca = document.getElementsByClassName('outra');
+for (let indice = 0; indice < mudanca.length; indice += 1) {
+  const mudanca = color[indice];
+  mudanca.style.backgroundColor = 'rgb' + aleatorio();
 }
