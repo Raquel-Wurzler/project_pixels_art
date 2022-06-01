@@ -1,26 +1,27 @@
 body {
   background-image: url(https://img.freepik.com/fotos-gratis/papel-digital-abstrato-aquarela-criancas-padrao-infinito-rosa-e-azul-formas-geometricas-fundo_82758-516.jpg?w=2000);
+  max-width: 80%;
+  margin: auto 400px;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 1px;
 }
 
 h1::first-letter {
   color: rgb(207, 61, 85);
-  font-size: 100px;
+  font-size: 80px;
 }
 
 .color {
   border: solid 1px black;
-  margin: 3px;
-  padding: 50px;
+  margin: 5px;
+  padding: 35px;
   display: inline-block;
   border-radius: 10%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-left: 18px;
 }
 
 #color-palette {
@@ -30,30 +31,26 @@ h1::first-letter {
 #clear-board {
   display: flexbox;
   font-family: cursive;
-  padding: 5px 10px;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   margin-top: 1%;
+  margin-left: 13px;
 }
 
 #board-size {
   display: flexbox;
-  margin-top: 0%;
-  padding: 5px 10px;
   border-radius: 5px;
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 170;
 }
 
 #generate-board {
   display: flexbox;
   font-family: cursive;
-  padding: 5px 10px;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
-  margin: 0 10px;
 }
 
 #pixel-board {
@@ -64,8 +61,7 @@ h1::first-letter {
 
 .pixel {
   border: solid 1px black;
-  padding: 40px;
-  margin: 0,6;
+  padding: 18px;
   background-color: white;
   height: 40px;
   width: 40px;
