@@ -1,7 +1,7 @@
 body {
   background-image: url(https://img.freepik.com/fotos-gratis/papel-digital-abstrato-aquarela-criancas-padrao-infinito-rosa-e-azul-formas-geometricas-fundo_82758-516.jpg?w=2000);
-  max-width: 80%;
-  margin: auto 400px;
+  /* max-width: 80%;
+  margin: auto 400px; */
 }
 
 h1 {
@@ -21,8 +21,7 @@ h1::first-letter {
   padding: 35px;
   display: inline-block;
   border-radius: 10%;
-  margin-left: 18px;
-}
+s}
 
 #color-palette {
   display: flex;

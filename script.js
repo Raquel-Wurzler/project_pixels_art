@@ -44,20 +44,36 @@ button.addEventListener('click', function () {
 });
 
 //Requisito 10.
-const bot = document.getElementById('generate-board');
+let paraRemover = document.querySelectorAll('#pixel-board div section')
 
+function clearBoard () {
+  for (let index = 0; index < paraRemover.length; index += 1) {
+    paraRemover[index].remove();
+  }
+}
+
+const bot = document.getElementById('generate-board');
 
 bot.addEventListener('click', function () {
   let inp = document.getElementById('board-size').value;
-  if (inp === '' || inp < 5) {
-    alert('Board inválido!')
+  if (inp === '' || inp < 5 || inp > 50) {
+    alert('Board inválido!');
   } else {
     console.log(inp);
+    clearBoard();
+    gerarDivs();
   }
-  if (inp >= 5 && inp <= 50) {
+});
 
+let teste = 5 ** 2;
+function gerarDivs () {
+  for (let index = 0; index < teste; index += 1) {
+    const div = document.createElement('div');
+    console.log (div);
+    div.className = 'pixel';
+    pixels.appendChild(div);
   }
-})
+}
 
 //Requisito 12
 function aleatorio () {
