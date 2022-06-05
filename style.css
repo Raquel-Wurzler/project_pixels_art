@@ -21,7 +21,7 @@ h1::first-letter {
   padding: 35px;
   display: inline-block;
   border-radius: 10%;
-s}
+}
 
 #color-palette {
   display: flex;
@@ -53,14 +53,14 @@ s}
 }
 
 #pixel-board {
-  height: 630px;
-  width: 630px;
+  /* height: 630px;    */
+  /* width: 630px; */
   margin-top: 1%;
 }
 
 .pixel {
   border: solid 1px black;
-  padding: 18px;
+  padding: 10px;
   background-color: white;
   height: 40px;
   width: 40px;
