@@ -28,13 +28,17 @@ h1::first-letter {
   display: flex;
 }
 
+#botoes {
+  display: flex;
+}
+
 #clear-board {
   font-family: cursive;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 300;
   margin-top: 1%;
-  margin-left: 13px;
+  background-color: rgb(163, 163, 192);
 }
 
 #board-size {
@@ -48,6 +52,7 @@ h1::first-letter {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 300;
+  background-color: rgb(179, 135, 220);
 }
 
 #pixel-board {
