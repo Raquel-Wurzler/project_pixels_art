@@ -55,15 +55,15 @@ bot.addEventListener('click', function () {
   if (inp === '') {
     alert('Board inválido!');
   } else if (inp < 5) {
-    return 5;
+    gerarDivs(5);
   } else if (inp > 50) {
-    return 50;
+    gerarDivs(50);
   } else {
     console.log(inp);
     clearBoard();
     gerarDivs();
   }
-});
+}); 
 
 function gerarDivs() {
   let valorRecebido = document.getElementById('board-size').value;
