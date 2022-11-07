@@ -10,7 +10,7 @@ azul.style.backgroundColor = 'blue';
 let roxo = document.getElementById('purple');
 roxo.style.backgroundColor = 'purple';
 
-//Requisito 7.
+//Requisito 7 - Selecione uma cor na paleta de cores e preencha os pixels no quadro.
 let palette = document.getElementById('color-palette');
 let color = document.getElementsByClassName('color');
 palette.addEventListener('click', function recebeSelecao(event) {
@@ -21,7 +21,7 @@ palette.addEventListener('click', function recebeSelecao(event) {
   seleciona.classList.add('selected');
 });
 
-// Requisito 8.
+// Requisito 8 - Preencha um pixel do quadro com a cor selecionada na paleta de cores
 const pixels = document.getElementById('pixel-board');
 pixels.addEventListener('click', function (event) {
   const element = document.querySelector('.selected').style.backgroundColor;
@@ -33,7 +33,7 @@ pixels.addEventListener('click', function (event) {
   }
 });
 
-//Requisito 9.
+//Requisito 9 - Crie um botão que retorne a cor do quadro para a cor inicial.
 let caixa = document.getElementsByClassName('pixel');
 let button = document.getElementById('clear-board');
 button.addEventListener('click', function () {
@@ -42,7 +42,7 @@ button.addEventListener('click', function () {
   }
 });
 
-//Requisito 10 e 11.
+//Requisito 10 e 11 - O quadro de pixels ter seu tamanho definido pela pessoa usuária & Limite o tamanho mínimo(5) e máximo(50) do quadro de pixels.
 function clearBoard() {
   const pixelBoard = document.getElementById('pixel-board');
   pixelBoard.innerHTML = '';
@@ -82,7 +82,7 @@ bot.addEventListener('click', function () {
   }
 }); 
 
-//Requisito 12
+//Requisito 12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página.
 function aleatorio() {
   const red = parseInt(Math.random() * 255, 10);
   const green = parseInt(Math.random() * 255, 10);
