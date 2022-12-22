@@ -28,3 +28,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 * reporter.json;
 
 ##### Link Deploy: https://tranquil-boba-d8fdb1.netlify.app/
+
+## Stack utilizada
+
+**Front-end:** JavaScript, HTML, CSS
